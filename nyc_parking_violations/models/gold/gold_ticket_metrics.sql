@@ -8,3 +8,4 @@ GROUP BY
     violation_code
 ORDER BY
     total_revenue_usd DESC
+    

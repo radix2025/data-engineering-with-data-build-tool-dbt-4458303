@@ -1,3 +1,6 @@
+-- test/violation_codes_revenue.sql
+-- Every violation code should have a total fee amount
+-- greater than or equal to $1.
 {{ config(severity = 'warn') }}
 
 SELECT
@@ -9,3 +12,4 @@ GROUP BY
     violation_code
 HAVING
     NOT(total_revenue_usd >= 1)
+    

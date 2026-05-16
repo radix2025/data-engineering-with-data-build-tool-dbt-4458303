@@ -9,3 +9,4 @@ SELECT
     vehicle_year
 FROM
     {{ref('silver_parking_violations')}}
+    
